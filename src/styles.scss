@@ -1,1 +1,47 @@
 /* You can add global styles to this file, and also import other style files */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import url("https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+  @apply font-sans box-border;
+}
+
+/* - Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-semibold;
+}
+
+h1 {
+  @apply text-4xl;
+}
+h2 {
+  @apply text-3xl;
+}
+h3 {
+  @apply text-2xl;
+}
+h4 {
+  @apply text-xl;
+}
+h5 {
+  @apply text-lg;
+}
+h6 {
+  @apply text-base;
+}
+
+.btn {
+  @apply rounded-full py-2 px-3 uppercase text-lg font-bold cursor-pointer tracking-wider;
+}
+
+.btn:hover {
+  @apply bg-primary text-white;
+}

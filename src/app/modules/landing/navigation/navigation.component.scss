@@ -1,0 +1,10 @@
+.nav-link {
+  @apply font-bold uppercase transition-all duration-1000 ease-in-out block w-full h-10 flex text-light items-center justify-center shadow-inner;
+}
+
+.nav-link > span {
+  @apply font-bold text-4xl;
+}
+.nav-link:hover {
+  @apply bg-primary text-white shadow-lg;
+}
